@@ -3,3 +3,17 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  width: 1400px;
+  display: flex;
+  margin: auto;
+}
+
+nav {
+  background-color: antiquewhite;
+}
+
+main {
+  background-color: aquamarine;
+}
