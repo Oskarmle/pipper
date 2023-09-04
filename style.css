@@ -50,6 +50,7 @@ nav {
 
 /************************* pip knappen ************************************/
 #pip{
+  margin-top: 50px;
   padding: 5px 50px;
   border-radius: 15px;
   background-color: #1d9bf0;
