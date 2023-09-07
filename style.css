@@ -70,3 +70,11 @@ main {
   background-color: aquamarine;
   height: 1000px;
 }
+
+/********************* pips *********************/
+
+#avatar {
+  height: 20px;
+  width: 20px;
+  background-color: #1d9bf0;
+}
