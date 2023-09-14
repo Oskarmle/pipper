@@ -31,11 +31,11 @@ try{
 
             $data = [
                 'username' => $input['username'],
-                'text' => $input['text_area']
-                'img' => $input['img_base64']
+                'text_area' => $input['text_area'],
+                'img_base64' => $input['img_base64']
             ];
 
-             $sql = 'INSERT INTO pipper VALUES(default, :username, :text_area, now(), null, null)';
+             $sql = 'INSERT INTO pipper VALUES(default, :username, :text_area, now(), null, :img_base64)';
              $statement = $conn->prepare($sql);
              $statement->execute($data);
 
