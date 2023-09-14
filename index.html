@@ -27,7 +27,7 @@
 
       <!-- links (kun for at få mere indhold på siden - linksne er disabled) -->
       <div class="links">
-        <a href="#"><img src="img/home.svg" alt="home" /> Home</a>
+        <a id="home-link" href="#"><img src="img/home.svg" alt="home" /> Home</a>
         <a href="#"><img src="img/search.svg" alt="explore" /> Explore</a>
         <a href="#"
           ><img src="img/bell.svg" alt="notifications" /> Notifications</a
@@ -44,6 +44,12 @@
       </div>
     </nav>
 
+    <!-- fixed top -->
+    <div class="fixed_top">
+      <p>Home</p>
+    </div>
+
+
     <div class="popup_container">
     
       <span class="popuptext" id="myPopup"></span>
@@ -54,7 +60,7 @@
         <input type="text" id="new-username" name="username" />
 
         <label for="new-text">Add your text</label>
-        <input type="text" id="new-text" name="add-text" />
+        <input type="text" id="new-text" name="add-text" maxlength="255" />
           <p id="countresult"></p>
 
         <label for="new-image">Add image</label>

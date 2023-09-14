@@ -19,6 +19,7 @@ nav {
   text-align: center;
   width: 20%;
   border-right: 0.5px solid grey;
+  position: fixed;
 }
 .logo {
   background-color: #1d9bf0;
@@ -44,9 +45,32 @@ nav {
 .links a:hover {
   text-decoration: underline;
 }
+#home-link{
+  font-weight: 900;
+}
 .links a img {
   margin-bottom: -4px;
 }
+
+/* ************************* fixed top ********************************** */
+.fixed_top{
+  height: 60px;
+  background-color: #1d9bf0;
+  width: 80%;
+  position: fixed;
+  right: 0;
+  opacity: 90%;
+  border-bottom: 0.5px solid grey;
+  z-index: 3;
+}
+.fixed_top p{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 12%;
+  padding-top: 20px;
+}
+
 
 /************************* pip knappen ************************************/
 #pip {
@@ -69,7 +93,7 @@ nav {
 main {
   background-color: rgb(255, 255, 255);
   height: 1000px;
-  margin-left: 20%;
+  margin-left: 30%;
 }
 
 /********************* pips *********************/
@@ -84,6 +108,7 @@ main {
   background-color: #ffffff;
   height: 400px;
   border-bottom: 0.5px solid grey;
+  margin-top: 65px;
 }
 h2 {
   font-size: 15px;
@@ -139,14 +164,10 @@ ul #liste {
 
 .popup_container{
   position: absolute;
-  top: 200px;
-  margin-left: 40%;
+  top: 75px;
+  margin-left: 30%;
   z-index: 1;
   display:none;
-}
-
-.test {
-  padding: 15px;
 }
 
 
