@@ -140,15 +140,9 @@ ul #liste {
 .popup-container{
   position: absolute;
   top: 200px;
-  /* right: 50%; */
   margin-left: 40%;
-  /* margin-right: auto; */
   z-index: 1;
 }
-
-/* .popup-container, .popuptext{
-  visibility: hidden;
-} */
 
 #create-pip-form {
   display: flex;
