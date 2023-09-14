@@ -1,8 +1,10 @@
 // Vi importere den funktion som henter pips fra og poster pips
 import { fetchPips, postPip } from "./get-pip.js";
 
+// Vi importerer en funktion som vores Loop kører igennem for at fylde vores array med objekter
 import { createPip } from "./create-pip.js";
 
+// Vi importerer en funktion som laver et billede om til base64
 import { imageToBase64 } from "./image-helpers.js";
 
 const form = document.getElementById("create-pip-form");

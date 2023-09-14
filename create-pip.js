@@ -8,11 +8,6 @@ export function createPip(pip) {
   //   clone template, så vi ikke ***** noget up
   const clone = document.importNode(template.content, true);
 
-  // Vi skal udfylde avatar id=avatar
-  // const avatarClone = clone.getElementById("avatar");
-  // avatarClone.src = x.avatarURL;
-  // avatarClone.id = "avatar-" + pip.id;
-
   // Vi skal udfylde username id=bruger
   const usernameClone = clone.getElementById("bruger");
   usernameClone.id = "username" + pip.id;
