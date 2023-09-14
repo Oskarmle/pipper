@@ -128,3 +128,15 @@ h3 {
 ul #liste {
   text-align: justify;
 }
+
+/* ************************** create pip pop up *************************** */
+
+.popup, .popuptext{
+  margin-top: 100px;
+  /* visibility: hidden; */
+  
+}
+#create-pip-form{
+  display: flex;
+  flex-direction: column;
+}
