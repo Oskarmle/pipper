@@ -14,6 +14,7 @@ export async function fetchPips() {
 
 export async function postPip(data) {
   const response = await fetch(URL, {
+    method: "POST",
     headers: {
       "content-Type": "application/json",
     },
