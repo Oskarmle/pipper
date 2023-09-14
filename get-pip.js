@@ -1,4 +1,4 @@
-const URL = "http://127.0.0.1:8000";
+const URL = "http://127.0.0.1:8000/pip";
 
 export async function fetchPips() {
   //vi har skrevet async for at fortaelle at det er en asynkron funktion

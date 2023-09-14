@@ -26,8 +26,24 @@ try{
             $statement = $conn->query("select * from pipper");
             $result = $statement->fetchAll(\PDO::FETCH_ASSOC);
             echo json_encode($result);
-        } else {
+        } else if ($requestMethod == "POST") {
             $input = (array) json_decode(file_get_contents('php://input'), TRUE);
+
+            $data = [
+                'username' => $input['username'],
+                'text' => $input['text_area']
+                'img' => $input['img_base64']
+            ];
+
+             $sql = 'INSERT INTO pipper VALUES(default, :username, :text_area, now(), null, null)';
+             $statement = $conn->prepare($sql);
+             $statement->execute($data);
+
+             $id = $conn->lastInsertId();
+             $pip = (object) $input;
+             $pip->pipperId = $id;
+
+             echo json_encode($pip);
         }
     }
 } catch(PDOException $e){
