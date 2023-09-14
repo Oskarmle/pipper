@@ -1,7 +1,7 @@
 // Vi importere den funktion som henter pips fra
 import { fetchPips } from "./get-pip.js";
 
-import { createPip } from "./create-pip.js";
+import { createPip, postPip } from "./create-pip.js";
 
 import { imageToBase64 } from "./image-helpers.js";
 
@@ -22,6 +22,8 @@ form.addEventListener("submit", async (event) => {
     text_area: text,
     img_base64: base64,
   };
+
+  const pip = postPip(pipObject);
 });
 
 async function load() {

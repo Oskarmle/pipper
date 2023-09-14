@@ -25,8 +25,7 @@ export function createPip(pip) {
 
   // Vi skal måske udfylde billede id=img
   const img = clone.getElementById("img");
-  img.src = pip.imgURL;
-  img.id = "image-" + pip.id;
+  img.src = pip.img_base64;
 
   // Vi skal udfylde dato og tid id=datetime
   const datetimeClone = clone.getElementById("datetime");
