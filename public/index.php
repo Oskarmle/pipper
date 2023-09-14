@@ -32,7 +32,7 @@ try{
             $data = [
                 'username' => $input['username'],
                 'text_area' => $input['text_area'],
-                'img_base64' => $input['img_base64']
+                'img_base64' => $input['img_base64'],
             ];
 
              $sql = 'INSERT INTO pipper VALUES(default, :username, :text_area, now(), null, :img_base64)';
