@@ -41,64 +41,64 @@
       </div>
     </nav>
 
-    <div class="popup"><span class="popuptext" id="myPopup"></span>
+    <div class="popup">
+      <span class="popuptext" id="myPopup"></span>
       <form id="create-pip-form">
         <h2>Add pip</h2>
         <label for="new-username">Username</label>
-        <input type="text" id="new-username" name="username">
+        <input type="text" id="new-username" name="username" />
 
         <label for="new-text">Add your text</label>
-        <input type="text" id="new-text" name="add-text">
+        <input type="text" id="new-text" name="add-text" />
 
         <!-- date-time skal addes her -->
 
         <label for="new-image">Add image</label>
-        <input type="file" id="pip-image" name="image">
+        <input type="file" id="pip-image" name="image" />
 
-        <input type="submit" value="create-pip">
-    </form>
+        <input type="submit" value="create-pip" />
+      </form>
     </div>
 
     <!-- feed med de forskellige pip -->
-    <main id="main">
-      <div id="pip-text">
-        <div id="bruger">
-          <div id="avatar"></div>
+    <main id="main"></main>
 
-          <h2>Emilie Rusid Midtgaard</h2>
-
-          <h3>
-            tekst til pip tekst til pip tekst til pip tekst til pip tekst til pip tekst til pip tekst til pip 
-          </h3>
-        </div>
-
-        <div id="date">
-          <p>mandag d.5</p>
-        </div>
-
-        <div id="img">
-          <!-- tekst til opslaget og vores billede  -->
-
-          <img src="./img/pipopslag.jpg" alt="" />
-        </div>
-
-        <ul id="liste">
-          <li><i class="fa-regular fa-comment"></i></li>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <li><i class="fa-solid fa-arrows-rotate"></i></li>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <li><i class="fa-regular fa-heart"></i></li>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <li><i class="fa-solid fa-chart-simple"></i></li>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <li><i class="fa-solid fa-arrow-up-from-bracket"></i></li>
-        </ul>
-      </div>
-    </main>
-
-   
-    
     <!-- Reklamesøjle i venstre side  -->
     <div class="adds"></div>
   </body>
+
+  <!-- Template til vores pips -->
+  <template id="piptemplate">
+    <div id="pip-text">
+      <div id="bruger">
+        <div id="avatar"></div>
+
+        <h2 id="bruger"></h2>
+
+        <h3 id="pip-text"></h3>
+      </div>
+
+      <div>
+        <p id="datetime"></p>
+      </div>
+
+      <div id="image">
+        <!-- tekst til opslaget og vores billede  -->
+
+        <img id="img" />
+      </div>
+
+      <ul id="liste">
+        <li><i class="fa-regular fa-comment"></i></li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><i class="fa-solid fa-arrows-rotate"></i></li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><i class="fa-regular fa-heart"></i></li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><i class="fa-solid fa-chart-simple"></i></li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><i class="fa-solid fa-arrow-up-from-bracket"></i></li>
+      </ul>
+    </div>
+  </template>
 </html>
