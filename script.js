@@ -1,7 +1,7 @@
-// Vi importere den funktion som henter pips fra
-import { fetchPips } from "./get-pip.js";
+// Vi importere den funktion som henter pips fra og poster pips
+import { fetchPips, postPip } from "./get-pip.js";
 
-import { createPip, postPip } from "./create-pip.js";
+import { createPip } from "./create-pip.js";
 
 import { imageToBase64 } from "./image-helpers.js";
 
