@@ -15,6 +15,7 @@
     />
     <script src="script.js" defer type="module"></script>
     <script src="pop-up.js" defer type="module"></script>
+    <script src="count.js" defer type="module"></script>
   </head>
 
   <body>
@@ -51,9 +52,11 @@
         <h2>Add pip</h2>
         <label for="new-username">Username</label>
         <input type="text" id="new-username" name="username" />
+        
 
         <label for="new-text">Add your text</label>
         <input type="text" id="new-text" name="add-text" />
+          <p id="countresult"></p>
 
         <label for="new-image">Add image</label>
         <input type="file" id="pip-image" name="image" />
@@ -91,6 +94,7 @@
       </div>
 
       <ul id="liste">
+        <!-- &nbsp er mellemrummene mellem iconerne -->
         <li><i class="fa-regular fa-comment"></i></li>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <li><i class="fa-solid fa-arrows-rotate"></i></li>
