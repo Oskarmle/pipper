@@ -137,7 +137,7 @@ ul #liste {
 
 /* ************************** create pip pop up *************************** */
 
-.popup-container{
+.popup_container{
   position: absolute;
   top: 200px;
   margin-left: 40%;
