@@ -69,7 +69,7 @@ nav {
 main {
   background-color: rgb(255, 255, 255);
   height: 1000px;
-  margin-left: 200px;
+  margin-left: 20%;
 }
 
 /********************* pips *********************/
@@ -93,6 +93,13 @@ h2 {
 h3 {
   font-size: 10px;
   padding-top: 15px;
+}
+#piptextundefined{
+  font-size: 18px;
+  font-weight: 500;
+}
+#datetimeundefined{
+  font-size: 14px;
 }
 
 #date {
@@ -130,12 +137,29 @@ ul #liste {
 
 /* ************************** create pip pop up *************************** */
 
-.popup,
-.popuptext {
-  margin-top: 100px;
-  /* visibility: hidden; */
+.popup-container{
+  position: absolute;
+  top: 200px;
+  /* right: 50%; */
+  margin-left: 40%;
+  /* margin-right: auto; */
+  z-index: 1;
 }
+
+/* .popup-container, .popuptext{
+  visibility: hidden;
+} */
+
 #create-pip-form {
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #1d9bf0;
+  padding: 100px 20px 0 20px;
+  border-radius: 20px;
+  height: 400px;
+  width: 500px;
+}
+input{
+  margin-bottom: 20px;
 }

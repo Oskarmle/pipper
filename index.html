@@ -14,6 +14,7 @@
       referrerpolicy="no-referrer"
     />
     <script src="script.js" defer type="module"></script>
+    <script src="pop-up.js" defer type="module"></script>
   </head>
 
   <body>
@@ -35,14 +36,14 @@
       </div>
 
       <!-- Pip knappen -->
-      <div class="pip-button">
+      <div class="pip-button" onclick="pipclickfunction()">
         <button id="pip">
           <p>Pip</p>
         </button>
       </div>
     </nav>
 
-    <div class="popup">
+    <div class="popup_container">
       <span class="popuptext" id="myPopup"></span>
       <form id="create-pip-form">
         <h2>Add pip</h2>
@@ -52,17 +53,18 @@
         <label for="new-text">Add your text</label>
         <input type="text" id="new-text" name="add-text" />
 
-        <!-- date-time skal addes her -->
-
         <label for="new-image">Add image</label>
         <input type="file" id="pip-image" name="image" />
 
-        <input type="submit" value="Post" />
+        <input  type="submit" value="Post" />
       </form>
     </div>
 
     <!-- feed med de forskellige pip -->
     <main id="main"></main>
+
+
+
 
     <!-- Reklamesøjle i venstre side  -->
     <div class="adds"></div>
