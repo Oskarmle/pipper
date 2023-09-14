@@ -1,11 +1,11 @@
 
-
+// jeg fortæller min kode at på knapper "pip", skal "popup_container" vise sig. jeg tjekker at den øverste funktion virke ved at brige console.log("hej fra funktion").
 document.getElementById("pip").addEventListener("click", function(){
     console.log("hej fra function")
     document.querySelector(".popup_container").style.display = "flex";
 })
 
-
+// jeg fortæller min kode at når jeg trykker på "post-knap" skal "popup_container" ikke vise sig.
 
 document.querySelector(".post-knap").addEventListener("click", function(){
     console.log("nej")
