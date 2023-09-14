@@ -142,6 +142,7 @@ ul #liste {
   top: 200px;
   margin-left: 40%;
   z-index: 1;
+  display:none;
 }
 
 .test {
@@ -161,4 +162,13 @@ ul #liste {
 }
 input{
   margin-bottom: 20px;
+}
+
+.post-knap{
+padding-top: 2px;
+margin-left: 2px;
+margin-top: 3;
+/* padding-top: -30px; */
+justify-items: right;
+z-index: 1;
 }

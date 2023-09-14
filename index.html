@@ -37,15 +37,17 @@
 
       <!-- Pip knappen -->
       <div class="pip-button">
-        <button id="pip">
+        <button id="pip" class="hej">
           <p>Pip</p>
         </button>
       </div>
     </nav>
 
     <div class="popup_container">
+    
       <span class="popuptext" id="myPopup"></span>
       <form id="create-pip-form" method="post">
+        <!-- <button class="nej">&times;</button> -->
         <h2>Add pip</h2>
         <label for="new-username">Username</label>
         <input type="text" id="new-username" name="username" />
@@ -55,8 +57,9 @@
 
         <label for="new-image">Add image</label>
         <input type="file" id="pip-image" name="image" />
+        <button class="post-knap">Post</button>
 
-        <input type="submit" value="Post" />
+        <!-- <input type="submit" value="Post" /> -->
       </form>
     </div>
 
