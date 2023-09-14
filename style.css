@@ -79,7 +79,7 @@ main {
   width: 20px;
   text-decoration: none;
 }
-#pip-text {
+#pip-flot {
   padding-top: 30px;
   background-color: #ffffff;
   height: 400px;
@@ -103,7 +103,6 @@ h3 {
 #image {
   height: 250px;
   width: 500px;
-
   margin-top: 10px;
 }
 
