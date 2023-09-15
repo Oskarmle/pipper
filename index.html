@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- links til vores javascript filer -->
     <script src="script.js" defer type="module"></script>
     <script src="pop-up.js" defer type="module"></script>
     <script src="count.js" defer type="module"></script>
@@ -49,7 +50,7 @@
       <p>Home</p>
     </div>
 
-
+<!--------- popup formen der kommer frem når der trykkes på pip knappen ---------->
     <div class="popup_container">
     
       <span class="popuptext" id="myPopup"></span>
@@ -61,8 +62,8 @@
 
         <label for="new-text">Add your text</label>
         <input type="text" id="new-text" name="add-text"/>
-        <p>Characters left:</p>  
-        <p id="countresult"></p>
+        
+        <p id="countresult">Characters left: 255 </p>
 
         <label for="new-image">Add image</label>
         <input type="file" id="pip-image" name="image" />
