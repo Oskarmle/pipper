@@ -25,7 +25,9 @@ form.addEventListener("submit", async (event) => {
     img_base64: base64,
   };
 
-  const pip = postPip(pipObject);
+  // den lægger pippet direkte ind på siden uden den skal reloade
+  const pip = await postPip(pipObject);
+  createPip(pip);
 });
 
 async function load() {
